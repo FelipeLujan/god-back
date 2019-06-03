@@ -13,7 +13,6 @@ router.get("/", async (req, res) => {
   } catch (e) {
     res.status(500).send("server error");
   }
-  return res.send("scoreboard route");
 });
 
 module.exports = router;

@@ -1,9 +1,9 @@
 const express = require("express");
 const connectDB = require("./config/db");
-
+var cors = require('cors')
 //initialize express
 const app = express();
-
+app.use(cors())
 //connect to mongo
 connectDB();
 app.get("/", (req, res) => {
